@@ -40,6 +40,11 @@ const styles = StyleSheet.create({
     container_PRIMARY: {
         backgroundColor: '#FF7B58',
     },
+    container_SECUNDARY: {
+        borderColor: '#FF7B58',
+        borderWidth: 2,
+
+    },
     container_TERTIARY: {
 
     },
@@ -50,8 +55,10 @@ const styles = StyleSheet.create({
     text_TERTIARY :{
         color: 'gray'
     },
+    text_SECUNDARY:{
+        color: '#FF7B58'
+    },
     icon: {
-        
         width: 20, 
         height: 20, 
     }

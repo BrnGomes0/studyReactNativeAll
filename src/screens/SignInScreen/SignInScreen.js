@@ -44,7 +44,6 @@ const SignInScreen = () => {
       <CustoInput placeholder="Username" value={username} setValue={setUsername}/>
       <CustoInput placeholder="password" value={password} setValue={setPassword} secureTextEntry={true}/>
       <CustomButton text="Sign In" onPress={onSignInPress}/>
-
       <CustomButton 
       text="Forgot password?" 
       onPress={onForgotPasswordPress}
