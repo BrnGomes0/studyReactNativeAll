@@ -14,18 +14,28 @@ import SocialSignInButtons from '../../components/CustomButton/SocialSignInButto
 
 
 
-const ForgotPasswordScreen = () => {
-    const [username, setUsername] = useState(""); // For username
+const NewPasswordScreen = () => {
+    const [code, setCode] = useState(""); // For username
+    const [newPassword, setNewPassword] = useState('');
     const onSignInPress = () => {
         console.warn('onSignInPress');
-    };  
+    };
+    const onSendPress = () => {
+        console.warn('onSendPress')
+    };
+    const onSubmitPress = () => {
+        console.warn('onSubmitPress')  
+    };
   return (
     <ScrollView>
     <View style={styles.root}>
         <Text style={styles.title}>Reset your password</Text>
-      <CustoInput placeholder="Username" value={username} setValue={setUsername}/>
-      
-      <CustomButton text="Send" />
+      <CustoInput placeholder="Code" value={code} setValue={setCode}/>
+      <CustoInput placeholder="Enter your new password" value={newPassword} setValue={setNewPassword}/>
+
+      <CustomButton text="Submit" 
+        onPress={onSubmitPress}
+      />
       <CustomButton 
       text="Back to Sign In" 
       onPress={onSignInPress}
@@ -58,4 +68,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default ForgotPasswordScreen;
+export default NewPasswordScreen;
